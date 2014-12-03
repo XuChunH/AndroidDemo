@@ -20,16 +20,22 @@ import java.util.List;
 import java.util.Map;
 
 import ch.xch.androiddemo.utils.Constant;
+import ch.xch.androiddemo.utils.SharedPreferencesUtil;
 
 
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener {
 
     private ListView listView;
+    private SharedPreferencesUtil spUtil;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        spUtil = new SharedPreferencesUtil(this);
+        if (spUtil.getTheme() == Constant.THEME_LIGHT) {
+            setTheme(R.style.MyTheme_Light);
+        }
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.listView);
         SimpleAdapter adapter = new SimpleAdapter(this, getData(), android.R.layout.simple_list_item_1, new String[]{Constant.TEXT_TITLE}, new int[]{android.R.id.text1});
@@ -53,11 +59,25 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_change_theme) {
+            spUtil.setTheme(spUtil.getTheme() == Constant.THEME_LIGHT ? Constant.THEME_DARK : Constant.THEME_LIGHT);
+            Intent restartIntent = new Intent(this, MainActivity.class);
+            restartIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            overridePendingTransition(0, 0);
+            startActivity(restartIntent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem item = menu.findItem(R.id.action_change_theme);
+        if (new SharedPreferencesUtil(this).getTheme() == Constant.THEME_LIGHT) {
+            item.setIcon(R.drawable.ic_action_theme_dark);
+        }
+        return super.onPrepareOptionsMenu(menu);
     }
 
     private List<Map<String, Object>> getData() {
@@ -85,7 +105,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(this, "position: "+position+" id: "+id, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "position: " + position + " id: " + id, Toast.LENGTH_SHORT).show();
     }
 
 }
