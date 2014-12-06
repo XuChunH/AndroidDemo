@@ -106,6 +106,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Toast.makeText(this, "position: " + position + " id: " + id, Toast.LENGTH_SHORT).show();
+        Map<String, Object> data = ((Map<String, Object>)parent.getAdapter().getItem(position));
+        startActivity((Intent)data.get(Constant.TEXT_INTENT));
     }
 
 }
