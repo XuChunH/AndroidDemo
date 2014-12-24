@@ -7,5 +7,10 @@
     <string name="aciton_change_theme">Change Theme</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_actionbar">ActionbarActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
 
+    <string name="activity_notification_post">Post A Notification</string>
+    <string name="activity_notification_noti_title">This is a Notification</string>
+    <string name="activity_notification_noti_content">Click to check the file.</string>
 </resources>
