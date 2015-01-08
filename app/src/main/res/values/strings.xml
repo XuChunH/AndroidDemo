@@ -9,8 +9,10 @@
     <string name="title_activity_web_view">WebViewActivity</string>
     <string name="title_activity_actionbar">ActionbarActivity</string>
     <string name="title_activity_notification">NotificationActivity</string>
-
     <string name="activity_notification_post">Post A Notification</string>
     <string name="activity_notification_noti_title">This is a Notification</string>
     <string name="activity_notification_noti_content">Click to check the file.</string>
+    <string name="title_activity_text_view">TextVIewActivity</string>
+    <string name="title_activity_aysnc_task_loader">AysncTaskLoaderActivity</string>
+
 </resources>
