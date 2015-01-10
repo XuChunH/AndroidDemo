@@ -15,4 +15,6 @@
     <string name="title_activity_text_view">TextVIewActivity</string>
     <string name="title_activity_aysnc_task_loader">AysncTaskLoaderActivity</string>
 
+    <string name="test_data_url">http://m.cnmo.com/news/468398.html?uc_param_str=cpdnvefrpfssntbi</string>
+
 </resources>
