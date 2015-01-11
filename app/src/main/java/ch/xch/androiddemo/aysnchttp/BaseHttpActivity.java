@@ -8,6 +8,8 @@ import com.loopj.android.http.AsyncHttpRequest;
 import com.loopj.android.http.RequestHandle;
 import com.loopj.android.http.ResponseHandlerInterface;
 
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.HttpContext;
@@ -55,5 +57,7 @@ public abstract class BaseHttpActivity extends Activity {
     }
 
     public abstract ResponseHandlerInterface getResponseHandler();
+
+    public abstract RequestHandle executeHttpRequest(AsyncHttpClient client, String URL, Header[] headers, HttpEntity entity, ResponseHandlerInterface responseHandler);
 
 }

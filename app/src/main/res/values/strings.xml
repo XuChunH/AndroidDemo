@@ -4,17 +4,21 @@
     <string name="app_name">AndroidDemo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="aciton_change_theme">Change Theme</string>
+    <string name="aciton_change_theme">切换主题</string>
     <string name="title_activity_list">ListActivity</string>
     <string name="title_activity_web_view">WebViewActivity</string>
     <string name="title_activity_actionbar">ActionbarActivity</string>
     <string name="title_activity_notification">NotificationActivity</string>
-    <string name="activity_notification_post">Post A Notification</string>
+    <string name="activity_notification_post">显示Notification</string>
     <string name="activity_notification_noti_title">This is a Notification</string>
     <string name="activity_notification_noti_content">Click to check the file.</string>
     <string name="title_activity_text_view">TextVIewActivity</string>
     <string name="title_activity_aysnc_task_loader">AysncTaskLoaderActivity</string>
     <string name="test_data_url">http://m.cnmo.com/news/468398.html?uc_param_str=cpdnvefrpfssntbi</string>
     <string name="title_activity_async_http">AsyncHttpActivity</string>
+    <string name="title_activity_async_http_json">AsyncHttpJsonActivity</string>
+    <string name="activity_asynchttp_loading">加载中………</string>
+    <string name="activity_asynchttp_load_fail">请求数据失败</string>
+    <string name="title_activity_jackson_parser">JacksonParserActivity</string>
 
 </resources>

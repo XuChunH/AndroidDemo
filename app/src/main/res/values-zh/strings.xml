@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="aciton_change_theme">切换主题</string>
-
-    <string name="activity_notification_post">显示Notification</string>
-</resources>
