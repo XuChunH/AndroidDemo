@@ -1,4 +1,4 @@
-E:\git\AndroidDemo\apiDemos\build\intermediates\classes\debug
-E:\git\AndroidDemo\apiDemos\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-dc8a221f02e7cbe00e49f99d71d0818393b457e8.jar
-E:\git\AndroidDemo\apiDemos\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-cd0592e657db19440eff275dfc89edbf87c0f2da.jar
-E:\git\AndroidDemo\apiDemos\build\intermediates\pre-dexed\debug\classes-33705ad7bce690f7f05ace3a5c041e97ca985cdf.jar
+E:\GIT\AndroidDemo\apiDemos\build\intermediates\classes\debug
+E:\GIT\AndroidDemo\apiDemos\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-2c7b3f93a4765de67fc456e30fee656c798d7e65.jar
+E:\GIT\AndroidDemo\apiDemos\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-65d777c0db30031a2624b30f5b48366edda2c3da.jar
+E:\GIT\AndroidDemo\apiDemos\build\intermediates\pre-dexed\debug\classes-0d60fae619ced5ea805fa3a2a34edc351d4cf6f2.jar

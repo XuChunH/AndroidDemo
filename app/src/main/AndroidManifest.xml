@@ -3,6 +3,10 @@
     package="ch.xch.androiddemo" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
     <application
         android:name=".DemoApplication"
@@ -99,6 +103,16 @@
         <activity
             android:name=".json.JacksonParserActivity"
             android:label="@string/title_activity_jackson_parser" >
+            <intent-filter>
+                <action android:name="cn.xch.action.default" />
+
+                <category android:name="cn.xch.category.default" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".camera.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="cn.xch.action.default" />
 

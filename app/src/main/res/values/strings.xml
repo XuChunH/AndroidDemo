@@ -3,6 +3,9 @@
 
     <string name="app_name">AndroidDemo</string>
     <string name="hello_world">Hello world!</string>
+    <string name="save">保存</string>
+    <string name="take_pic">拍照</string>
+
     <string name="action_settings">Settings</string>
     <string name="aciton_change_theme">切换主题</string>
     <string name="title_activity_list">ListActivity</string>
@@ -20,5 +23,6 @@
     <string name="activity_asynchttp_loading">加载中………</string>
     <string name="activity_asynchttp_load_fail">请求数据失败</string>
     <string name="title_activity_jackson_parser">JacksonParserActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
 
 </resources>
