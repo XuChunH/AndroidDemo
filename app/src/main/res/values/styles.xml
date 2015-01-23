@@ -8,5 +8,10 @@
     <style name="MyTheme.Light" parent="android:Theme.Holo.Light">
 
     </style>
+    
+    <style name="toolbarTheme" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 
 </resources>
