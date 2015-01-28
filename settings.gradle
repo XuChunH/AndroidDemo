@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':android-async-http-library', ':android-async-http-sample'
 include ':apiDemos'

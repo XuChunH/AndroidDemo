@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidDemo.iml" filepath="$PROJECT_DIR$/AndroidDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-async-http-library/android-async-http-library.iml" filepath="$PROJECT_DIR$/android-async-http-library/android-async-http-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-async-http-sample/android-async-http-sample.iml" filepath="$PROJECT_DIR$/android-async-http-sample/android-async-http-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/apiDemos/apiDemos.iml" filepath="$PROJECT_DIR$/apiDemos/apiDemos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

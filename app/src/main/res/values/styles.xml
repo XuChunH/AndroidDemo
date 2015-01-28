@@ -12,6 +12,8 @@
     <style name="toolbarTheme" parent="Theme.AppCompat">
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/red_500</item>
+        <item name="colorPrimaryDark">@color/red_900</item>
     </style>
 
 </resources>
